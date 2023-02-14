@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi página web</title>
+  <style>
+
+        .column {
+      float: left;
+      width: 30%; /*Esto dividirá el espacio disponible en tres columnas iguales*/
+      padding: 0px; /*Agregar un espacio entre las columnas*/
+              display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .column img {
+      display: block;
+      max-width: 100%;
+      height: 300px;
+    }
+    /* Estilo del recuadro */
+    #recuadro {
+        width: 400px;
+        height: 200px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #888;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Estilo de los botones */
+    .botones {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .botones button {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      margin: 0 30px;
+      padding: 10px;
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+
+    }
+
+    /* Estilo de la página principal */
+    body {
+      background-color: #EF9A9A;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 700px;
+    }
+
+    h1 {
+      margin-top: 10px;
+      font-size: 48px;
+      color: #333;
+    }
+
+    .imagenes {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .imagen {
+      margin: 10px;
+      position: relative;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .imagen:hover {
+      transform: scale(1.1);
+    }
+
+    .imagen:hover .texto {
+      opacity: 1;
+    }
+
+    .imagen img {
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .imagen .texto {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 100;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 10px 1px #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Página de inicio -->
+    <div class="column">
+    <img src="miniom1.gif" alt="Imagen 1">
+  </div>
+  <div id="recuadro">
+    <h2>Quieres ver lo mas mampo de suchiapa?</h2>
+    <div class="botones">
+
+      <button onclick="alert('Ni modo, bruno es mi pastor y nada me falta'); window.location.href = 'principal.html';">No</button>
+      <button onclick="window.location.href = 'principal.html';">Si</button>
+    </div>
+
+  </div>
+      <div class="column">
+    <img src="cars.gif" alt="Imagen 2">
+  </div>
+
+
+
+
+
